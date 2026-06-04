@@ -35,6 +35,7 @@ Please check:
 Run the basic commands from the project root:
 
 ```bash
+python -m unittest discover -s tests
 python main.py list
 python main.py analyze
 python main.py suggest
@@ -43,6 +44,7 @@ python main.py suggest
 If your machine uses `python3`:
 
 ```bash
+python3 -m unittest discover -s tests
 python3 main.py list
 python3 main.py analyze
 python3 main.py suggest

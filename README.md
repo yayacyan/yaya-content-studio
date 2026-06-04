@@ -6,6 +6,15 @@
 
 第一版完全在本機運作，不串 API、不需要帳號、不會把你的文章送到外部服務。資料都用 CSV 和 Markdown 存在專案資料夾裡，想搬走、備份、改格式都很容易。
 
+![yaya-content-studio CLI demo](docs/assets/demo.svg)
+
+## Project Links
+
+- [Usage examples](docs/usage_examples.md)
+- [Content strategy notes](docs/content_strategy.md)
+- [Launch article draft](docs/launch_article.md)
+- [Roadmap](docs/roadmap.md)
+
 ## 適合誰使用
 
 這個工具適合這樣的人：

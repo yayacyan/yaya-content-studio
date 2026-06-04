@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="700" viewBox="0 0 1120 700" role="img" aria-labelledby="title desc">
+  <title id="title">yaya-content-studio CLI demo screenshot</title>
+  <desc id="desc">A terminal-style screenshot showing yaya-content-studio listing ideas, analyzing stats, and suggesting next topics.</desc>
+  <rect width="1120" height="700" fill="#f7f5ef"/>
+  <rect x="70" y="54" width="980" height="592" rx="8" fill="#182025"/>
+  <rect x="70" y="54" width="980" height="42" rx="8" fill="#2c353b"/>
+  <circle cx="96" cy="75" r="7" fill="#ff6b5f"/>
+  <circle cx="119" cy="75" r="7" fill="#f7c948"/>
+  <circle cx="142" cy="75" r="7" fill="#57c785"/>
+  <text x="560" y="81" text-anchor="middle" fill="#d8e0e4" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">yaya-content-studio</text>
+
+  <text x="104" y="136" fill="#8bd5ca" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">$ python main.py list</text>
+  <text x="104" y="178" fill="#f2f4f3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Recent content ideas</text>
+  <text x="104" y="205" fill="#9da9af" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">--------------------</text>
+  <text x="104" y="234" fill="#e6ebed" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">#1 2026-01-15 [note] How I organize content ideas after work (workflow, idea)</text>
+
+  <text x="104" y="294" fill="#8bd5ca" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">$ python main.py analyze</text>
+  <text x="104" y="336" fill="#f2f4f3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Performance analysis</text>
+  <text x="104" y="363" fill="#9da9af" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">--------------------</text>
+  <text x="104" y="392" fill="#e6ebed" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">Best platform: note (score 40)</text>
+  <text x="104" y="420" fill="#e6ebed" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">Best category: workflow (score 40)</text>
+  <text x="104" y="448" fill="#e6ebed" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">- Turn high-like, no-sale topics into concrete paid drafts.</text>
+
+  <text x="104" y="508" fill="#8bd5ca" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">$ python main.py suggest</text>
+  <text x="104" y="550" fill="#f2f4f3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">Next topic suggestions</text>
+  <text x="104" y="584" fill="#e6ebed" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">1. workflow intro: process, mistakes, and practical examples</text>
+  <text x="104" y="614" fill="#e6ebed" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">2. Free vs paid articles: what should actually be different</text>
+</svg>
