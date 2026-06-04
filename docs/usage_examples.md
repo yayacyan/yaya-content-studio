@@ -53,6 +53,30 @@ The draft is saved under:
 articles/YYYY/MM/YYYYMMDD_platform_title.md
 ```
 
+## Generate a no-cost SVG cover
+
+```bash
+python main.py cover
+```
+
+Example input:
+
+```text
+title: How I organize content ideas after work
+platform: note
+category: workflow
+tags: Creator Tools, Markdown, Local First
+subtitle: A local-first workflow for personal creators
+```
+
+This saves a local SVG cover under:
+
+```text
+exports/covers/YYYY/MM/YYYYMMDD_platform_title_cover.svg
+```
+
+The cover command does not call image APIs and does not require paid services.
+
 ## Record performance stats
 
 ```bash

@@ -55,6 +55,7 @@ For interactive commands, try them with fictional data:
 ```bash
 python main.py new
 python main.py save
+python main.py cover
 python main.py stats
 ```
 

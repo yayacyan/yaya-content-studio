@@ -18,12 +18,16 @@ class CliWorkflowTest(unittest.TestCase):
             "BASE_DIR": main.BASE_DIR,
             "DATA_DIR": main.DATA_DIR,
             "ARTICLES_DIR": main.ARTICLES_DIR,
+            "EXPORTS_DIR": main.EXPORTS_DIR,
+            "COVERS_DIR": main.COVERS_DIR,
             "IDEAS_FILE": main.IDEAS_FILE,
             "STATS_FILE": main.STATS_FILE,
         }
         main.BASE_DIR = self.base_dir
         main.DATA_DIR = self.base_dir / "data"
         main.ARTICLES_DIR = self.base_dir / "articles"
+        main.EXPORTS_DIR = self.base_dir / "exports"
+        main.COVERS_DIR = main.EXPORTS_DIR / "covers"
         main.IDEAS_FILE = main.DATA_DIR / "content_ideas.csv"
         main.STATS_FILE = main.DATA_DIR / "stats.csv"
         main.ensure_files()
@@ -81,6 +85,25 @@ class CliWorkflowTest(unittest.TestCase):
         self.assertIn("tags: Open Source, Python, Creator Tools", content)
         self.assertIn("status: draft", content)
         self.assertIn("Body paragraph.", content)
+
+    def test_cover_writes_local_svg(self):
+        answers = [
+            "Draft title",
+            "note",
+            "workflow",
+            "Creator Tools, Markdown, Local First",
+            "A calm local workflow",
+        ]
+
+        with patch("builtins.input", side_effect=answers), redirect_stdout(io.StringIO()):
+            main.command_cover(argparse.Namespace())
+
+        cover_files = list(main.COVERS_DIR.glob("**/*.svg"))
+        self.assertEqual(len(cover_files), 1)
+        content = cover_files[0].read_text(encoding="utf-8")
+        self.assertIn("<svg", content)
+        self.assertIn("Draft title", content)
+        self.assertIn("no API, no cost", content)
 
     def test_analyze_and_suggest_use_stats_signals(self):
         main.append_csv(

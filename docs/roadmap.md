@@ -8,6 +8,7 @@
 - Record performance stats
 - Analyze simple performance signals
 - Suggest next topics with rule-based logic
+- Generate no-cost local SVG cover images
 
 ## v2: Better Local Workflow
 
@@ -16,6 +17,7 @@
 - Export article bundles
 - Add richer templates for paid articles
 - Add weekly review reports
+- Add more cover styles and optional PNG export
 
 ## v3: Optional Integrations
 

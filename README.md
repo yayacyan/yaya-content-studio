@@ -66,10 +66,11 @@ pip install -r requirements.txt
 
 1. 平常想到題目時，先用 `new` 記下來
 2. 想開始寫時，用 `save` 存成 Markdown 草稿
-3. 手動整理、修改、發布到 note 或 Medium
-4. 發布後過幾天，用 `stats` 記錄觀看、喜歡、留言、銷售等表現
-5. 每週用 `analyze` 看哪些平台和主題有反應
-6. 用 `suggest` 找下一篇可以延伸的主題
+3. 需要封面時，用 `cover` 生成免費 SVG 配圖
+4. 手動整理、修改、發布到 note 或 Medium
+5. 發布後過幾天，用 `stats` 記錄觀看、喜歡、留言、銷售等表現
+6. 每週用 `analyze` 看哪些平台和主題有反應
+7. 用 `suggest` 找下一篇可以延伸的主題
 
 這個工具不會替你判斷人生方向，也不會說「只要照做就成功」。它只是幫你把內容經營裡那些容易散掉的小資訊收回來，讓你比較容易做下一個決定。
 
@@ -156,6 +157,28 @@ tags:
 status: draft
 ---
 ```
+
+### 生成免費封面圖
+
+```bash
+python main.py cover
+```
+
+會詢問：
+
+- title
+- platform
+- category
+- tags
+- subtitle
+
+這個指令不串 API，也不需要付費服務。它會在本機產生一張 SVG 封面圖：
+
+```text
+exports/covers/YYYY/MM/YYYYMMDD_platform_title_cover.svg
+```
+
+`exports/` 預設不會被 commit 到 GitHub，適合放個人文章素材。
 
 ### 列出最近內容
 
@@ -257,6 +280,14 @@ Medium 文章可以先用這組 tags：
 ```text
 Open Source, Python, Creator Tools, Local First, Markdown
 ```
+
+如果需要 note 或 Medium 封面，可以再跑：
+
+```bash
+python main.py cover
+```
+
+它會產生一張不需要任何 API 費用的 SVG 封面。
 
 note 版本可以比較個人一點，像是：
 
