@@ -62,6 +62,7 @@ class CliWorkflowTest(unittest.TestCase):
             "Draft title",
             "Medium",
             "workflow",
+            "Open Source, Python, Creator Tools",
             "# Draft title",
             "",
             "Body paragraph.",
@@ -77,6 +78,7 @@ class CliWorkflowTest(unittest.TestCase):
         self.assertIn("title: Draft title", content)
         self.assertIn("platform: Medium", content)
         self.assertIn("category: workflow", content)
+        self.assertIn("tags: Open Source, Python, Creator Tools", content)
         self.assertIn("status: draft", content)
         self.assertIn("Body paragraph.", content)
 

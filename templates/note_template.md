@@ -3,6 +3,7 @@ title:
 date:
 platform: note
 category:
+tags:
 status: draft
 paid: no
 ---
@@ -18,4 +19,3 @@ paid: no
 ## 気づいたこと
 
 ## 読者が今日できること
-

@@ -66,3 +66,11 @@ I want this to stay useful for creators who prefer a transparent, local-first wo
 Project repo:
 
 https://github.com/yayacyan/yaya-content-studio
+
+Suggested Medium tags:
+
+- Open Source
+- Python
+- Creator Tools
+- Local First
+- Markdown

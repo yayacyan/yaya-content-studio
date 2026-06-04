@@ -127,7 +127,14 @@ python main.py save
 - title
 - platform
 - category
+- tags
 - body markdown
+
+`tags` 可以用逗號分隔，例如：
+
+```text
+Open Source, Python, Creator Tools, Local First, Markdown
+```
 
 輸入 Markdown 內文時，用單獨一行 `.` 結束。
 
@@ -145,6 +152,7 @@ title:
 date:
 platform:
 category:
+tags:
 status: draft
 ---
 ```
@@ -242,6 +250,12 @@ memo: 先寫免費文，重點放在共鳴和日常流程
 
 ```bash
 python main.py save
+```
+
+Medium 文章可以先用這組 tags：
+
+```text
+Open Source, Python, Creator Tools, Local First, Markdown
 ```
 
 note 版本可以比較個人一點，像是：

@@ -150,6 +150,7 @@ def command_save(_: argparse.Namespace) -> None:
     title = prompt_required("title")
     platform = prompt_choice("platform (note / Medium / Threads / X)", VALID_PLATFORMS)
     category = prompt_required("category")
+    tags = input("tags (comma-separated): ").strip()
     body = prompt_markdown_body()
 
     today = date.today()
@@ -165,6 +166,7 @@ def command_save(_: argparse.Namespace) -> None:
             f"date: {today.isoformat()}",
             f"platform: {platform}",
             f"category: {category}",
+            f"tags: {tags}",
             "status: draft",
             "---",
             "",

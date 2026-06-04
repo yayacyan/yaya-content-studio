@@ -3,6 +3,7 @@ title:
 date:
 platform: Medium
 category:
+tags:
 status: draft
 paid: no
 ---
@@ -18,4 +19,3 @@ paid: no
 ## What changed
 
 ## Practical takeaways
-

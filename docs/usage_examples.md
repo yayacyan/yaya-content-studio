@@ -33,6 +33,7 @@ Example input:
 title: How I organize content ideas after work
 platform: note
 category: workflow
+tags: Creator Tools, Markdown, Local First
 body markdown:
 # How I organize content ideas after work
 
