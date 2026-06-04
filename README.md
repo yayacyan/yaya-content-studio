@@ -1,5 +1,7 @@
 # yaya-content-studio
 
+Language: [繁體中文](README.md) | [English](README.en.md) | [日本語](README.ja.md)
+
 `yaya-content-studio` 是一個給個人內容創作者使用的本機 CLI 工具。
 
 它不是文章生成器，也不會幫你自動發文。它比較像一個很安靜的內容經營助理：幫你把靈感收好、把草稿存好、把文章表現記下來，然後用簡單規則提醒你下一篇可以寫什麼。
