@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local environment files
+.env
+.env.*
+
+# Creator drafts and private exports
+articles/**/*.md
+!articles/.gitkeep
+exports/
+*.local.csv
+
+# Logs
+*.log
